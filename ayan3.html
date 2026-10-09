@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayan3</title>
+
+    <!-- Icons ke liye -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+<style>   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        white 70%,
+        #888 100%
+    );
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    width: 260px;
+    min-height: 373px;
+    border: 2px solid #222;
+    border-radius: 4px;
+    padding: 30px 17px 25px;
+    text-align: center;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.card h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    padding: 13px 10px;
+    border-radius: 30px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.card a:hover {
+    background: #333;
+}
+
+/* Instagram pink card */
+.card.active {
+    background: #e72c6b;
+    border-color: #e72c6b;
+    color: white;
+}
+
+.card.active .icon {
+    color: white;
+}
+
+.card.active p {
+    color: white;
+}
+
+.card.active a {
+    background: white;
+    color: #e72c6b;
+}
+
+.card.active a:hover {
+    background: #f5f5f5;
+}
+
+/* Mobile responsive */
+/*@media (max-width: 600px) {
+    .container {
+        gap: 25px;
+    }
+
+    .card {
+        width: 280px;
+    }*/
+}
+    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Twitter Card -->
+        <div class="card">
+            <i class="fa-brands fa-twitter icon"></i>
+            <h2>TWITTER</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+            <a href="#">READ MORE</a>
+        </div>
+
+        <!-- Instagram Card -->
+        <div class="card active">
+            <i class="fa-brands fa-instagram icon"></i>
+            <h2>INSTAGRAM</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+            <a href="#">READ MORE</a>
+        </div>
+
+        <!-- YouTube Card -->
+        <div class="card">
+            <i class="fa-brands fa-youtube icon"></i>
+            <h2>YOUTUBE</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+            <a href="#">READ MORE</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
